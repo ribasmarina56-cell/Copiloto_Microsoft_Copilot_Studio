@@ -1,8 +1,6 @@
 # Construindo um copiloto inteligente com o Microsoft Copilot Studio
 
-O **Microsoft Copilot Studio** é uma plataforma de baixo código da Microsoft para criar agentes e copilotos personalizados, definir experiências conversacionais, conectar dados e serviços e automatizar tarefas. A solução pode ser usada para criar experiências que vão além de um chatbot tradicional, combinando conversa, conhecimento, ações e automação.
-
-> **Objetivo deste projeto:** registrar, de forma clara e organizada, os principais conceitos aprendidos na construção de um copiloto no Microsoft Copilot Studio.
+O **Microsoft Copilot Studio** é uma plataforma de baixo código da Microsoft para criar agentes e copilotos personalizados, definir experiências conversacionais, conectar dados e serviços e automatizar tarefas. Este projeto registra, de forma didática, os principais conceitos aprendidos durante a construção de um copiloto.
 
 ## 1. Configuração dos fluxos de conversa
 
@@ -14,7 +12,7 @@ Uma estrutura bem planejada deve:
 - considerar diferentes formas de o usuário fazer a mesma solicitação;
 - usar variáveis quando for necessário guardar informações durante a conversa;
 - criar ramificações para diferentes situações;
-- prever respostas para solicitações que estejam fora do escopo;
+- prever respostas para solicitações fora do escopo;
 - evitar caminhos sem saída e permitir que o usuário retome a conversa quando necessário.
 
 O planejamento do fluxo é importante porque a qualidade do agente depende não apenas das respostas, mas também de como ele conduz o usuário até a solução.
@@ -49,7 +47,7 @@ A personalização não deve substituir regras de segurança, controle de acesso
 
 ## 4. Diferentes formas de iniciar um copiloto
 
-Durante o aprendizado do Copilot Studio, diferentes pontos de partida podem ajudar a compreender a plataforma:
+Durante o aprendizado do Copilot Studio, diferentes pontos de partida podem ajudar a compreender a plataforma.
 
 ### Modelo ou template
 
@@ -95,8 +93,8 @@ Este projeto demonstra o aprendizado dos fundamentos necessários para estrutura
 
 ## 7. Referências oficiais
 
-- Microsoft Support — Microsoft 365 Copilot: https://support.microsoft.com/pt-br/microsoft-365-copilot/
-- Microsoft Learn — Copilot Studio: https://learn.microsoft.com/pt-br/microsoft-copilot-studio/
+- [Microsoft Learn — Copilot Studio](https://learn.microsoft.com/pt-br/microsoft-copilot-studio/)
+- [Microsoft Support — Microsoft 365 Copilot](https://support.microsoft.com/pt-br/microsoft-365-copilot/)
 
 ## Autora
 

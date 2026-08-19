@@ -1,8 +1,12 @@
 # Microsoft Copilot Studio — Projeto de estudo
 
-Projeto desenvolvido para documentar o aprendizado sobre a criação e organização de um copiloto com o **Microsoft Copilot Studio**.
+Projeto de estudo desenvolvido para documentar, de forma organizada, os principais conceitos relacionados à criação de agentes e copilotos com o **Microsoft Copilot Studio**.
 
-## Conteúdo
+## 🎯 Objetivo
+
+Registrar o aprendizado sobre planejamento de conversas, organização de fluxos, integração com dados e serviços, personalização, automação, testes e boas práticas de segurança.
+
+## 📚 Conteúdo
 
 O projeto aborda:
 
@@ -12,13 +16,10 @@ O projeto aborda:
 - integração com serviços e fontes de dados;
 - automação de tarefas;
 - tratamento de erros e solicitações fora do escopo;
-- testes, segurança e boas práticas.
+- testes e melhoria contínua;
+- permissões e boas práticas de segurança.
 
-## Objetivo
-
-Demonstrar, de forma organizada, os principais conceitos aprendidos durante a construção de um copiloto e registrar as decisões e boas práticas utilizadas no projeto.
-
-## Estrutura
+## 📁 Estrutura do projeto
 
 ```text
 Copiloto_Microsoft_Copilot_Studio/
@@ -26,16 +27,18 @@ Copiloto_Microsoft_Copilot_Studio/
 └── copilot-microsoft-copilot-studio.md
 ```
 
-## Documentação principal
+## 📖 Documentação principal
 
-Consulte [`copilot-microsoft-copilot-studio.md`](copilot-microsoft-copilot-studio.md) para ver o conteúdo completo do projeto.
+Consulte o arquivo [copilot-microsoft-copilot-studio.md](copilot-microsoft-copilot-studio.md) para acessar o conteúdo completo do projeto.
 
-## Referências oficiais
+## 🔎 Referências oficiais
 
 - [Microsoft Learn — Copilot Studio](https://learn.microsoft.com/pt-br/microsoft-copilot-studio/)
 - [Microsoft Support — Microsoft 365 Copilot](https://support.microsoft.com/pt-br/microsoft-365-copilot/)
 
-## Autora
+> **Observação:** os recursos, nomes e telas do Microsoft Copilot Studio podem ser atualizados pela Microsoft. Este projeto tem finalidade educacional e registra conceitos de aprendizagem, não uma reprodução exata da interface.
+
+## 👩‍💻 Autora
 
 **Marina Ribas**
 

@@ -1,29 +1,105 @@
-# Construindo um Copiloto Inteligente com o Microsoft Copilot Studio
+# Construindo um copiloto inteligente com o Microsoft Copilot Studio
 
-O Microsoft Copilot Studio é uma plataforma de baixo código que permite criar assistentes virtuais personalizados, capazes de conversar com usuários, executar tarefas e se integrar a diferentes sistemas corporativos. Criar um copiloto eficiente exige atenção a três pilares fundamentais: a configuração dos fluxos de conversa, a integração com serviços externos e a personalização das respostas.
+O **Microsoft Copilot Studio** é uma plataforma de baixo código da Microsoft para criar agentes e copilotos personalizados, definir experiências conversacionais, conectar dados e serviços e automatizar tarefas. A solução pode ser usada para criar experiências que vão além de um chatbot tradicional, combinando conversa, conhecimento, ações e automação.
 
-## Configuração de Fluxos de Conversa
+> **Objetivo deste projeto:** registrar, de forma clara e organizada, os principais conceitos aprendidos na construção de um copiloto no Microsoft Copilot Studio.
 
-O primeiro passo na construção de um copiloto é definir como ele vai conduzir o diálogo com o usuário. No Copilot Studio, isso é feito por meio de "tópicos", que funcionam como blocos de conversa acionados por frases de gatilho, intenções detectadas ou eventos específicos. Dentro de cada tópico, é possível estruturar perguntas, ramificações condicionais, variáveis para armazenar informações e ações que direcionam o fluxo conforme as respostas do usuário. Um bom desenho de fluxo evita becos sem saída, antecipa variações de linguagem e garante que o assistente sempre tenha um caminho para ajudar, mesmo quando a solicitação foge do previsto.
+## 1. Configuração dos fluxos de conversa
 
-## Integração com Serviços Externos
+Um dos primeiros passos é definir como o agente deverá conduzir a conversa. Os fluxos precisam considerar a intenção do usuário, as perguntas necessárias, as possíveis respostas e os caminhos alternativos.
 
-Um copiloto isolado, que apenas conversa, tem valor limitado. Seu verdadeiro potencial aparece quando ele se conecta a sistemas externos: bancos de dados, APIs, Power Automate, SharePoint, sistemas de CRM ou ERP, entre outros. Essas integrações permitem que o assistente consulte informações em tempo real, dispare processos automatizados e atualize registros sem que o usuário precise sair da conversa. O Copilot Studio facilita isso por meio de conectores prontos e da possibilidade de criar fluxos personalizados que agem como pontes entre o copiloto e os demais sistemas da organização.
+Uma estrutura bem planejada deve:
 
-É justamente nesse ponto que se percebe o valor prático de um assistente funcional: quando ele não apenas responde perguntas, mas interage de forma inteligente, entende o contexto da solicitação e executa tarefas reais em segundo plano — como abrir um chamado, consultar o status de um pedido ou agendar uma reunião. Um copiloto bem construído deixa de ser um simples chatbot e passa a atuar como um verdadeiro assistente digital, capaz de economizar tempo, reduzir erros manuais e automatizar processos repetitivos, liberando as pessoas para tarefas que exigem julgamento humano.
+- definir o objetivo de cada interação;
+- considerar diferentes formas de o usuário fazer a mesma solicitação;
+- usar variáveis quando for necessário guardar informações durante a conversa;
+- criar ramificações para diferentes situações;
+- prever respostas para solicitações que estejam fora do escopo;
+- evitar caminhos sem saída e permitir que o usuário retome a conversa quando necessário.
 
-## Personalização de Respostas
+O planejamento do fluxo é importante porque a qualidade do agente depende não apenas das respostas, mas também de como ele conduz o usuário até a solução.
 
-A personalização é o que diferencia um copiloto genérico de um assistente que realmente representa a identidade e as necessidades de uma organização. Isso inclui ajustar o tom de voz, adaptar as respostas ao perfil do usuário, usar variáveis para tornar o diálogo mais natural e configurar respostas geradas por IA generativa para lidar com perguntas fora do escopo previamente mapeado. Também é possível definir mensagens de fallback, personalizar a aparência do assistente e ajustar o nível de formalidade de acordo com o público-alvo, tornando a experiência mais fluida e alinhada aos objetivos do negócio.
+## 2. Integração com serviços e dados
 
-## O Que Se Aprende ao Criar um Copilot em Cada Modalidade
+O valor de um copiloto aumenta quando ele consegue consultar informações e executar ações em sistemas externos. Dependendo da configuração e das permissões disponíveis no ambiente, o Copilot Studio pode trabalhar com conectores, Power Automate, Microsoft 365, SharePoint, APIs e outros serviços.
 
-O Copilot Studio oferece diferentes pontos de partida para a criação de um assistente, e cada um proporciona aprendizados distintos:
+Essas integrações podem permitir cenários como:
 
-- **Copilot baseado em modelo (template):** ao partir de um modelo pronto, aprende-se como uma estrutura de conversa já validada é organizada, entendendo boas práticas de fluxo, nomenclatura de tópicos e organização de variáveis. É uma forma eficiente de compreender rapidamente os padrões recomendados pela plataforma antes de criar soluções mais complexas do zero.
+- consultar informações de uma fonte de dados;
+- iniciar um processo automatizado;
+- registrar ou atualizar informações;
+- consultar o andamento de uma solicitação;
+- encaminhar uma tarefa para outro sistema.
 
-- **Copilot baseado em descrição com IA:** ao descrever o propósito do assistente em linguagem natural e deixar que a IA generativa monte a estrutura inicial, aprende-se como a inteligência artificial interpreta intenções, sugere tópicos e organiza fluxos automaticamente. Essa abordagem ensina a importância de descrições claras e objetivas, já que a qualidade do resultado gerado depende diretamente da forma como o objetivo do copiloto é comunicado.
+A integração deve ser planejada considerando autenticação, permissões, tratamento de erros e proteção das informações. O agente não deve receber mais acesso do que o necessário para executar sua função.
 
-- **Copilot em branco:** ao construir tudo do zero, sem modelos ou sugestões automáticas, aprende-se em profundidade a lógica interna da plataforma — como tópicos se conectam, como variáveis são criadas e manipuladas, como integrações são configuradas manualmente e como cada decisão de design impacta a experiência do usuário. É a abordagem que exige mais esforço, mas que proporciona o domínio mais completo das ferramentas e possibilidades do Copilot Studio.
+## 3. Personalização das respostas
 
-Em conjunto, essas três formas de criação mostram que dominar o Copilot Studio não é apenas aprender a usar uma ferramenta, mas entender os princípios por trás da construção de assistentes conversacionais inteligentes, sejam eles simples réplicas de um modelo, criações assistidas por IA ou soluções totalmente autorais.
+A experiência do usuário também depende da forma como o agente se comunica. É possível definir orientações para o comportamento do copiloto, o tom das respostas, o público-alvo e as informações que devem ser consideradas durante a interação.
+
+Uma boa personalização deve buscar respostas:
+
+- claras e objetivas;
+- adequadas ao público;
+- consistentes com a finalidade do agente;
+- transparentes quando não houver informação suficiente;
+- úteis mesmo quando a pergunta não corresponder exatamente a um cenário previamente previsto.
+
+A personalização não deve substituir regras de segurança, controle de acesso ou validação das informações.
+
+## 4. Diferentes formas de iniciar um copiloto
+
+Durante o aprendizado do Copilot Studio, diferentes pontos de partida podem ajudar a compreender a plataforma:
+
+### Modelo ou template
+
+Um modelo pronto ajuda a observar uma estrutura inicial de agente e a entender como os componentes são organizados. É uma boa opção para quem está conhecendo a plataforma.
+
+### Criação orientada por descrição
+
+Ao explicar em linguagem natural o objetivo do agente, recursos de IA podem ajudar a produzir uma estrutura inicial. Essa abordagem demonstra a importância de escrever instruções claras, específicas e coerentes com o resultado esperado.
+
+### Criação a partir do zero
+
+Construir a solução manualmente permite compreender melhor a organização dos componentes, os fluxos, as variáveis, as integrações e as decisões de experiência do usuário.
+
+> Os nomes, recursos e telas do Copilot Studio podem mudar com as atualizações da Microsoft. Por isso, este material apresenta conceitos de aprendizagem e não pretende reproduzir uma interface específica.
+
+## 5. Boas práticas para o projeto
+
+Para manter um copiloto organizado e fácil de evoluir:
+
+1. Defina claramente o objetivo do agente.
+2. Identifique o público que utilizará a solução.
+3. Liste os principais casos de uso antes de criar os fluxos.
+4. Especifique quais informações o agente pode consultar.
+5. Defina quais ações o agente pode executar.
+6. Planeje respostas para erros e solicitações fora do escopo.
+7. Teste os principais caminhos antes de disponibilizar o agente.
+8. Revise permissões e acessos das integrações.
+9. Documente as decisões importantes do projeto.
+10. Reavalie o agente após mudanças nos dados, fluxos ou serviços conectados.
+
+## 6. O que este projeto demonstra
+
+Este projeto demonstra o aprendizado dos fundamentos necessários para estruturar um copiloto no Microsoft Copilot Studio, incluindo:
+
+- planejamento de conversas;
+- organização de fluxos;
+- uso de IA para auxiliar na criação;
+- integração com serviços e dados;
+- personalização da experiência;
+- tratamento de situações fora do fluxo principal;
+- testes e melhoria contínua;
+- cuidados com permissões e segurança.
+
+## 7. Referências oficiais
+
+- Microsoft Support — Microsoft 365 Copilot: https://support.microsoft.com/pt-br/microsoft-365-copilot/
+- Microsoft Learn — Copilot Studio: https://learn.microsoft.com/pt-br/microsoft-copilot-studio/
+
+## Autora
+
+**Marina Ribas**
+
+Projeto de estudo sobre Microsoft Copilot Studio.
